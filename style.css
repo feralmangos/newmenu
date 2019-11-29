@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.menu-icon {
+    display: flex;
+    position: absolute;
+    widows: 18px;
+    height: 12px;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.burger-icon {
+    display: block;
+}
+
+.close-icon {
+    display: none;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+a:visited {
+    color: white;
+}
+
+.dropdown ul {
+    display: none;
+    padding-left: 0px;
+    z-index: 1;
+    width: 100%;
+    border: grey solid 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(136, 139, 139);
+    position: absolute;
+    top: 20px;
+}
+
+.dropdown ul li {
+    border: white solid 1px;
+    font-weight: 600;
+}
+
+.dropdown ul li a {
+    display: block;
+}
+
+.dropdown ul li:hover {
+    background: black;
+}
+
+input[type=checkbox]:checked~ul {
+    display: block;
+}
+
+input:checked+label .close-icon {
+    display: block;
+}
+
+input:checked+label .burger-icon {
+    display: none;
+}
+
+.navbar {
+    border-bottom: gray solid 2px;
+    position: relative;
+    height: 26px;
+}
+
+.logo {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu-button span {
+    display: block;
+    width: 80%;
+    border-bottom: solid #000000 1px;
+}
